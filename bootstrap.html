@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+
+
+
+
+    <title>Zapiee Cosmetic Products</title>
+
+    <style>
+        .nav-item {
+            color: white;
+        }
+
+        .navbar-brand {
+            color: white;
+            overflow: hidden;
+
+        }
+        .nav-link{
+            color: white;
+        }
+
+        .container-fluid {
+
+            color: white;
+            background-color: #57244b;
+
+        }
+
+        .card {
+            transition: transform 0.3s ease;
+
+        }
+
+
+        .card.btn:hover {
+            transform: scale(1.05);
+        }
+
+        /* background-color: #DCA47C; */
+
+
+        .slide {
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .btn {
+            color: black;
+            background-color: white;
+
+        }
+
+        .btn:hover {
+            color: var(--bs-btn-hover-color);
+            /* color: var(--bs-btn-border-color); */
+            background-color: #460202;
+            border-color: #ffffff;
+        }
+
+
+        .head {
+
+            color: pink;
+            text-align: center;
+            padding: 30px;
+
+
+        }
+
+        .text1 {
+            column-rule-color: #bdb76b;
+            text-align: center;
+        }
+
+        .secondpage {
+
+            padding-bottom: 10px;
+            color: #bdb76b;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-between;
+            /* margin: 10px; */
+            background-color: #FFD3B6;
+
+        }
+
+        h1 {
+            font-family: "Edu AU VIC WA NT Hand", cursive;
+            color: #698474;
+
+        }
+
+        .text01 {
+            text-align: justify;
+        }
+
+        .thirdpage {
+            color: white;
+            text-align: center;
+            padding: 10px;
+            background-color: #FFD3B6;
+
+        }
+
+
+
+
+        .fourthpage {
+            padding: 20px;
+        }
+
+        .fifthpg {
+            color: white;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+            height: 2%;
+            background-color: #698474;
+            font-size: 15px;
+            display: flex;
+            justify-content: center;
+            font-size: 30px;
+            /* margin-left: -360px; */
+            animation: slidein 7s infinite;
+            font-family: "Edu AU VIC WA NT Hand", cursive;
+        }
+
+        .fifthpg span {
+            animation: dot 1.5s infinite;
+            opacity: 0;
+            animation-delay: 0s, 0.5s, 1s, 1.5s;
+            /* Delay each dot's animation */
+        }
+
+        @keyframes dot {
+            0% {
+                opacity: 0;
+            }
+
+            25% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 1.5;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+
+
+
+
+        h1 {
+            color: #C738BD;
+            font-size: 30px;
+        }
+
+        /* h2 {
+            font-size: 25px;
+            padding: 20px;
+            text-align: center;
+            font-family: "Edu AU VIC WA NT Hand", cursive;
+        } */
+
+        h3 {
+            font-size: 20px;
+            font-family: "Libre Franklin", sans-serif;
+
+        }
+
+        .sixthpg {
+            padding: 20px;
+            text-align: center;
+
+            font-size: 15px;
+
+        }
+
+
+        span {
+            color: rgb(255, 255, 255);
+        }
+
+        .line {
+            width: 100%;
+            height: 5px;
+            background-color: #698474;
+
+        }
+
+        .btnf {
+
+            padding: 20px;
+            margin: 5px;
+            /* color: rgb(111, 99, 99); */
+
+        }
+
+        .sixthpg a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .sixthpg li {
+            list-style-type: none;
+            padding: 10px 0px;
+            /* text-align: left; */
+        }
+
+        .seventhpg {
+            text-align: center;
+            padding: 10px;
+        }
+
+        .lastpg {
+            padding: 7%;
+            text-align: center;
+        }
+
+
+        .offer {
+            text-align: center;
+            font-size: 30px;
+            padding: 20px;
+            color: #C738BD;
+            font-family: "Kalnia Glaze", serif;
+
+        }
+
+        .navbar-nav .nav-link.active,
+        .navbar-nav .nav-link.show {
+            color: white;
+        }
+
+        summary {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <b>Zapiee Cosmetic Products </b> </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Products
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./hair.html">Hair Care</a></li>
+                            <li><a class="dropdown-item" href="./skinCare.html">Skin Care</a></li>
+                            <li><a class="dropdown-item" href="./bodyCare.html">Body Care </a></li>
+                            <li><a class="dropdown-item" href="./Fragrance.html">Fragrance</a></li>
+
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+
+                        </ul>
+                    </li>
+                    <div class="nav-item">
+                        <a class="nav-item" href="./abboutus.html" target=""></a>
+                    </div>
+
+
+
+
+
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+
+
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <section class="firstpage">
+        <div class="container">
+            <div class="row">
+                <div class="head">
+
+                    <h1>
+                        Zapiee Cosmetic Products <br> </h1>
+                </div>
+
+                <div class="slide">
+                    <div id="imagesExampleAutoplaying" data-bs-ride="Images">
+                        <div class="images-inner">
+
+
+                            <div class="imsges-item">
+                                <img src="./Images/page0202.html" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+
+
+    </section>
+
+    <section class="thirdpage">
+        <div class="container">
+            <div class="row g-3">
+                <div class="offer">
+                    <b> Combo Offers</b>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="./Images/hairr.html" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Zapiee Herbal set of 6 Hair growth Kit
+
+                            </h5>
+                            <p class="card-text"></p>
+                            <a href="#" class="btn btn-primary"><i class="fa-solid fa-indian-rupee-sign"></i>1999</a
+                                align-items-center>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="./Images/lip.html" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                1 + 1 lip Stick
+
+                            </h5>
+                            <p class="card-text"></p>
+                            <a href="#" class="btn btn-primary "><i class="fa-solid fa-indian-rupee-sign"></i>699</a
+                                align-items-center>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="./Images/boddy.html" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Zapiee Herbal body Care set (6)
+
+                            </h5>
+                            <p class="card-text"></p>
+                            <a href="#" class="btn btn-primary"><i class="fa-solid fa-indian-rupee-sign"></i>1499</a
+                                align-items-center>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card">
+                        <img src="./Images/skin.html" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                The all skin type rotine combo
+
+                            </h5>
+                            <p class="card-text"></p>
+                            <a href="#" class="btn btn-primary"><i class="fa-solid fa-indian-rupee-sign"></i>1250</a
+                                align-items-center>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card">
+                        <img src="./Images/eye.html" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Eye care kit-pick any (3)
+
+                            </h5>
+                            <p class="card-text"></p>
+                            <a href="#" class="btn btn-primary"><i class="fa-solid fa-indian-rupee-sign"></i>999</a
+                                align-items-center>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="secondpage">
+        <div class="container">
+            <div class="row g-3">
+                <div class="offer">
+                    <b> 20% Offer For These Products</b>
+                </div>
+
+
+                <div class="col-md-4">
+
+                    <div class="card">
+                        <img src="./Images/shaa.html" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"> <br> Wella Professionals Eimi Dry Me Shampoo (180ml) </h5>
+                            <p class="card-text"></p>
+                            <a href="#" class="btn btn-primary"><i class="fa-solid fa-indian-rupee-sign"></i>550</a
+                                align-items-center>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+
+                        <img src=" ./Images/gold.html" class="" alt="...">
+                        <div class="card-body"> <br>
+                            <h5 class="card-title"> Wella Professionals Luminous Oil Reflections Smoothing Oil (100ml)
+                            </h5>
+                            <p class="card-text"></p>
+                            <a href="#" class="btn btn-primary"><i class="fa-solid fa-indian-rupee-sign"></i>650</a
+                                align-items-center>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="./Images/booster.html" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"> <br>Hair boost Serum &
+                                Hair Growth Vitalizer Serum - (100ml)</h5>
+                            <p class="card-text"></p>
+                            <a href="#" class="btn btn-primary"><i class="fa-solid fa-indian-rupee-sign"></i>699</a
+                                align-items-center>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="./Images/n6.html" class="" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Olaplex Perfector & Smoother Duo Combo <br>(n6)
+                            </h5>
+                            <p class="card-text"></p>
+                            <a href="#" class="btn btn-primary"><i class="fa-solid fa-indian-rupee-sign"></i>2499</a
+                                align-items-center>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="./Images/shampoo.html" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Biotop Professional 700 Keratin + Kale Shampoo Pack of 2 Combo</h5>
+                            <p class="card-text"></p>
+                            <a href="#" class="btn btn-primary"><i class="fa-solid fa-indian-rupee-sign"></i>1700</a
+                                align-items-center>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+
+                    <div class="card">
+                        <img src="./Images/smooth.html" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Biotop Professional 700 Keratin + Kale Shampoo Pack of 2 Combo </h5>
+                            <p class="card-text"></p>
+                            <a href="#" class="btn btn-primary"><i class="fa-solid fa-indian-rupee-sign"></i>1100</a
+                                align-items-center>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="./Images/cont.html" class="" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"> Kundal Cherry Blossom Honey & Macadamia Hair Treatment (500ml)
+                            </h5>
+                            <p class="card-text"></p>
+                            <a href="#" class="btn btn-primary"><i class="fa-solid fa-indian-rupee-sign"></i>999</a
+                                align-items-center>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="./Images/sp.html" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">
+
+
+                                SP Balance Scalp Energy Serum <br> (100ml)
+                            </h5>
+                            <p class="card-text"></p>
+                            <a href="#" class="btn btn-primary"><i class="fa-solid fa-indian-rupee-sign"></i>1250</a
+                                align-items-center>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="./Images/wax.html" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">
+
+
+                                BEARDO Men Hair Wax Xxtra Strong Hold Crystal Wax - 100G
+                            </h5>
+                            <p class="card-text"></p>
+                            <a href="#" class="btn btn-primary"><i class="fa-solid fa-indian-rupee-sign"></i>1780</a
+                                align-items-center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </section>
+
+
+    <section class="fifthpg">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+
+                    <div class="product">
+
+                        <span>Take</span>
+                        <span>a</span>
+                        <span>Good</span>
+                        <span>Products</span>
+                        <span>To</span>
+                        <span>Day</span>
+                        <!-- <span>g</span> -->
+
+                        <!-- <h2> Take A Good Products To Day </h2> -->
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="sixthpg">
+        <div class="container">
+            <div class="row g-3">
+                <div class="col-md-3">
+
+                    <h3> <b>Get to known <br> </b> </h3> <br>
+
+                    <ul>
+
+                        <details>
+                            <summary>aboutus</summary>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, nobis. Quo eos
+                                a, in alias ab illum cumque ipsa sapiente! Placeat ratione rem nesciunt est
+                                voluptatum cupiditate repellat sequi ipsa recusandae! Deleniti sapiente praesentium
+                                molestiae veritatis, ducimus ab odit harum tenetur labore minima fugit, perspiciatis
+                                laborum expedita vel nulla ipsam?</p>
+
+                        </details>
+                        <li><a href="./aboutUs.html"> About us </a></li>
+                        <li><a href=""> Careers </a></li>
+                        <li><a href=""> press Release</a></li>
+                        <li><a href="">Feedback</a></li>
+
+
+                    </ul>
+
+                </div>
+                <div class="col-md-3">
+
+                    <h3><b>follow us</b></h3> <br>
+
+                    <ul>
+                        <li><a href=""> Facebook </a></li>
+                        <li><a href=""> twitter </a></li>
+                        <li><a href=""> Instagram</a></li>
+
+
+
+                    </ul>
+
+
+
+                </div>
+
+                <div class="col-md-3">
+
+
+                    <h3><b>Customer Care</b></h3> <br>
+
+                    <ul>
+                        <li><a href=""> Help center</a></li>
+                        <li><a href=""> FAQs </a></li>
+                        <li><a href=""> Instagram</a></li>
+                    </ul>
+
+
+                </div>
+
+
+
+                <div class="col-md-3">
+                    <div class="colour">
+                        <h2><b>Contact us</b></h2> <br>
+                        Call:<span>1-790-903-9032 </span>
+                        <br> <br>
+                        Whatsapp : <span>9597895093</span><br> <br>
+                        (all day between 8am-8pm)<br> <br>
+                        Email: <span> jeba102001@gmail.com</span><br> <br>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section class="seventhpg">
+        <div class="container">
+            <div class="row g-3">
+
+
+
+                <div class="line">
+                    <div class="btnf">
+
+                        <div class="col">
+
+                            <button class="navbar-toggler" type="button" data-bs-target="collapse"
+                                data-bs-toggle="#navbarScroll">
+                                <span class="navbar-toggler-icon"></span>
+                                Get started
+                            </button>
+                            <button class="navbar-toggler" type="button" data-bs-target="collapse"
+                                data-bs-toggle="#navbarScroll">
+                                <span class="navbar-toggler-icon"></span>
+                                Contact
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="lastpg">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4">
+                    <h3><b>Privacy policy</b></h3> <br>
+
+                </div>
+
+                <div class="col-md-4">
+                    <h3><b>Sales and Refunds</b></h3> <br>
+
+                </div>
+
+                <div class="col-md-4">
+                    <h3><b>Site map</b></h3> <br>
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    
+
+</body>
+
+</html>

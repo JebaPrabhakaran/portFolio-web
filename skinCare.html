@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .container-fluid {
+
+            color: white;
+            background-color: #57244b;
+
+        }
+
+        .firstpage {
+            color: black;
+            text-align: center;
+
+        }
+
+        .btn {
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+        }
+
+        .btn:hover {
+            color: var(--bs-btn-hover-color);
+            /* color: var(--bs-btn-border-color); */
+            background-color: #620152;
+            border-color: #000000;
+        }
+
+        .firstpage {
+            text-align: center;
+            background-color: #d8bfd8;
+            color: white;
+            padding: 2%;
+        }
+
+        .secondpg {
+            padding: 2%;
+            width: 100%;
+            height: 5%;
+            background-color: #698474;
+            justify-content: space-evenly;
+            display: flex;
+            font-size: 20px;
+            text-align: center;
+            color: white;
+            font-family: "Edu AU VIC WA NT Hand", cursive;
+        }
+
+        .secondpg {
+            color: white;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+            height: 2%;
+            background-color: #698474;
+            font-size: 15px;
+            display: flex;
+            justify-content: center;
+            font-size: 30px;
+            /* margin-left: -360px; */
+            animation: slidein 7s infinite;
+            font-family: "Edu AU VIC WA NT Hand", cursive;
+        }
+
+        .secondpg span {
+            animation: dot 1.5s infinite;
+            opacity: 0;
+            animation-delay: 0s, 0.5s, 1s, 1.5s;
+            /* Delay each dot's animation */
+        }
+
+        @keyframes dot {
+            0% {
+                opacity: 0;
+            }
+
+            25% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 1.5;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+
+        h1 {
+
+            padding-left: 20px;
+            font-family: "Edu AU VIC WA NT Hand", cursive;
+            font-size: 30px;
+            color: #57244b;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+
+
+        button {
+
+            background-color: black;
+            color: antiquewhite;
+            font-size: 50px;
+        }
+
+        .thirdpage {
+            text-align: center;
+            padding: 3%;
+        }
+
+        .line {
+            width: 100%;
+            height: 5px;
+            background-color: rgb(0, 0, 0);
+            justify-content: space-between;
+            display: flex;
+        }
+
+        .nav-link {
+            color: white;
+        }
+
+        .navbar-brand {
+            color: white;
+        }
+
+        .down {
+            padding: 10px;
+        }
+
+        .sixthpg {
+            padding: 20px;
+            text-align: center;
+
+            font-size: 15px;
+
+        }
+
+
+        /* span {
+            color: red;
+        } */
+
+        .line {
+            width: 100%;
+            height: 5px;
+            background-color: #698474;
+        }
+
+        .btnf {
+
+            padding: 20px;
+            margin: 5px;
+            /* color: rgb(111, 99, 99); */
+
+        }
+
+        .sixthpg a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .sixthpg li {
+            list-style-type: none;
+            padding: 10px 0px;
+            /* text-align: left; */
+        }
+
+        .seventhpg {
+            text-align: center;
+            padding: 10px;
+        }
+
+        .lastpg {
+            padding: 3px;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .navbar-nav .nav-link.active,
+        .navbar-nav .nav-link.show {
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <b>Zapiee Cosmetic Products </b> </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./bootstrap.html">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Products
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./hair.html">Hair Care</a></li>
+                            <li><a class="dropdown-item" href="./skinCare.html">Skin Care</a></li>
+                            <li><a class="dropdown-item" href="./bodyCare.html">Body Care </a></li>
+                            <li><a class="dropdown-item" href="./Fragrance.html">Fragrance</a></li>
+
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+
+                        </ul>
+                    </li>
+                    <div class="nav-item">
+                        <a class="nav-item" href="./abboutus.html" target=""></a>
+                    </div>
+
+
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="./aboutUs.html" target="_blank">About Us</a>
+                    </li> -->
+
+
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+
+
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <section class="firstpage">
+        <div class="container">
+
+            <div class="row g-3">
+                <h1> Skin Care</h1>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="./Images/night.html" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"> <br> Brightening Night Cream For Skin Hydration &
+                                Repair 50G
+                            </h5>
+                            <p class="card-text"></p>
+                            <a href="#" class="btn btn-primary"><i class="fa-solid fa-indian-rupee-sign"></i>550</a
+                                align-items-center>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="./Images/facewash.html" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"> <br>Acne Skin Care Set - Oil Away Moisturiser 50Ml &
+                                Real Neem </h5>
+                            <p class="card-text"></p>
+                            <a href="#" class="btn btn-primary"><i class="fa-solid fa-indian-rupee-sign"></i>550</a
+                                align-items-center>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="./Images/bright.html" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"> <br> Glycolic Skin Brightening Serum Reduce Dark
+                                Spots </h5>
+                            <p class="card-text"></p>
+                            <a href="#" class="btn btn-primary"><i class="fa-solid fa-indian-rupee-sign"></i>550</a
+                                align-items-center>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="./Images/clar.html" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"> Clarins Total Eye Smooth Cream (15ml)
+                                share icon</h5>
+                            <p class="card-text"></p>
+                            <a href="#" class="btn btn-primary"><i class="fa-solid fa-indian-rupee-sign"></i>898</a
+                                align-items-center>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="./Images/scrub.html" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">The Face Shop Smart Peeling Honey Black Sugar Face Scrub (120ml)
+                            </h5>
+                            <p class="card-text"></p>
+                            <a href="#" class="btn btn-primary"><i class="fa-solid fa-indian-rupee-sign"></i>799</a
+                                align-items-center>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="./Images/rice.html" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"> The Face Shop 2-Step Rice and Ceramide Moisturizing Combo (150)ml
+                            </h5>
+                            <p class="card-text"></p>
+                            <a href="#" class="btn btn-primary"><i class="fa-solid fa-indian-rupee-sign"></i>1650</a
+                                align-items-center>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="./Images/sun.html" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Collagen Boost and Skin Protection - Sunscreen + Face Serum
+                                Combo </h5>
+                            <p class="card-text"></p>
+                            <a href="#" class="btn btn-primary"><i class="fa-solid fa-indian-rupee-sign"></i>850</a
+                                align-items-center>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="./Images/maskk.html" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">The Face Shop Real Nature Blueberry Face Sheet Mask (20g) </h5>
+                            <p class="card-text"></p>
+                            <a href="#" class="btn btn-primary"><i class="fa-solid fa-indian-rupee-sign"></i>100</a
+                                align-items-center>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="./Images/foil.html" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"> Clarins Relax Body Treatment Oil (100 ml)</h5>
+                            <p class="card-text"></p>
+                            <a href="#" class="btn btn-primary"><i class="fa-solid fa-indian-rupee-sign"></i>2500</a
+                                align-items-center>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="./Images/lorem.html" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"> Yves Saint Laurent Y Eau De Parfum (100ml)</h5>
+                            <p class="card-text"></p>
+                            <a href="#" class="btn btn-primary"><i class="fa-solid fa-indian-rupee-sign"></i>890</a
+                                align-items-center>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="./Images/9eye.html" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">
+
+                                Innisfree Perfect 9 Intensive Eye Cream (30ml)</h5>
+                            <p class="card-text"></p>
+                            <a href="#" class="btn btn-primary"><i class="fa-solid fa-indian-rupee-sign"></i>3890</a
+                                align-items-center>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="./Images/rest.html" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"> L'occitane Immortelle Reset Eye Serum - (15ml)</h5>
+                            <p class="card-text"></p>
+                            <a href="#" class="btn btn-primary"><i class="fa-solid fa-indian-rupee-sign"></i>2500</a
+                                align-items-center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="secondpg">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+
+                    <span>Take</span>
+                    <span>a</span>
+                    <span>Good</span>
+                    <span>Products</span>
+                    <span>To</span>
+                    <span>Day</span>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <section class="sixthpg">
+        <div class="container">
+            <div class="row g-3">
+                <div class="col-md-3">
+
+                    <h2> <b>Get to known <br> </b> </h2> <br>
+
+                    About us <br> <br>
+                    Careers<br> <br>
+                    press Release<br> <br>
+                    Feedback<br> <br>
+
+                </div>
+
+                <div class="col-md-3">
+
+                    <h2><b>follow us</b></h2> <br>
+                    Facebook<br> <br>
+                    twitter<br> <br>
+                    Instagram<br> <br>
+
+                </div>
+
+                <div class="col-md-3">
+                    <h2><b>Customer Care</b></h2> <br>
+                    Help center <br> <br>
+                    FAQs<br> <br>
+
+                </div>
+
+
+
+                <div class="col-md-3">
+                    <div class="colour">
+                        <h2><b>Contact us</b></h2> <br>
+                        Call:<span>1-790-903-9032 </span>
+                        <br> <br>
+                        Whatsapp : <span>9597895093</span><br> <br>
+                        (all day between 8am-8pm)<br> <br>
+                        Email: <span> jeba102001@gmail.com</span><br> <br>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section class="seventhpg">
+        <div class="container">
+            <div class="row g-3">
+
+
+
+                <div class="line"></div>
+
+                <div class="btnf">
+
+                    <div class="col">
+
+                        <button class="navbar-toggler" type="button" data-bs-target="collapse"
+                            data-bs-toggle="#navbarScroll">
+                            <span class="navbar-toggler-icon"></span>
+                            Get started
+                        </button>
+                        <button class="navbar-toggler" type="button" data-bs-target="collapse"
+                            data-bs-toggle="#navbarScroll">
+                            <span class="navbar-toggler-icon"></span>
+                            Contact
+                        </button>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="lastpg">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4">
+                    <h2><b>Privacy policy</b></h2> <br>
+
+                </div>
+
+                <div class="col-md-4">
+                    <h2><b>Sales and Refunds</b></h2> <br>
+
+                </div>
+
+                <div class="col-md-4">
+                    <h2><b>Site map</b></h2> <br>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f0f0f0;
+            /* background:  */
+            /* Light background color */
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #4CAF50;
+            /* Green header background */
+            color: #fff;
+            /* White text color */
+            padding: 10px 0;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            text-align: right;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        .hero {
+            background-image: url('hero-bg.jpg');
+            /* Replace with your hero background image */
+            background-size: cover;
+            background-position: center;
+            color: #000000;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+            /* Darker shade of green */
+        }
+
+        .gallery {
+            padding: 80px 0;
+            text-align: center;
+            animation: slidein 7s infinite;
+        }
+
+        .gallery h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            animation: dot 2s infinite;
+            opacity: 0;
+            animation-delay: 0s, 0.5s, 1s, 1.5s;
+        }
+
+        @keyframes dot {
+            0% {
+                opacity: 0;
+            }
+
+            25% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 1.5;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+
+
+        .gallery-images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #333;
+            /* Dark footer background */
+            color: #fff;
+            /* White text color */
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Nature Website</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Welcome to Nature</h2>
+            <p>Explore the beauty of nature through our stunning collection of photos.</p>
+            <a href="./explore.html" class="btn">Explore Now</a>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <div class="container">
+            <h2>Gallery</h2>
+            <div class="gallery-images">
+                <div class="gallery-item">
+                    <img src="./Images/black.html" alt="Nature Image">
+                </div>
+                <div class="gallery-item">
+                    <img src="./Images/spa.html" alt="Nature Image">
+                </div>
+                <div class="gallery-item">
+                    <img src="./Images/smooth.html" alt="Nature Image">
+                </div>
+                <!-- Add more gallery items as needed -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Nature Website. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

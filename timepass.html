@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+    <style>
+        /* .loading-container {
+            background-color: bisque;
+            color: black;
+            width: 100%;
+            height: 100px;
+            text-align: center;
+            padding-top: 20px;
+            transition: 2s;
+
+
+        } */
+
+        .loading-container {
+            width: 100%;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            height: 100vh;
+            background-color: blueviolet;
+            color: white;
+            /* background: url(./Images/kit.html);
+            b */
+            /* Adjust as needed */
+        }
+
+        .loading-container span {
+            animation: dot 1.5s infinite;
+            opacity: 0;
+            animation-delay: 0s, 0.5s, 1s, 1.5s;
+            /* Delay each dot's animation */
+        }
+
+        @keyframes dot {
+            0% {
+                opacity: 0;
+            }
+
+            25% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="loading-container">
+        <div class="loding-text">
+            <span>l</span>
+            <span>o</span>
+            <span>a</span>
+            <span>d</span>
+            <span>i</span>
+            <span>n</span>
+            <span>g</span>
+        </div>
+    </div>
+</body>
+
+</html>
