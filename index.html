@@ -2,347 +2,878 @@
 <html lang="en">
 
 <head>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+
+
     <style>
-        /* nav {
-
-            background-color: rgb(169, 60, 169);
-        } */
-
-        .navbar-brand {
-            color: antiquewhite;
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
         }
 
-        .nav-linkactive {
-            color: white;
+
+        a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
         }
 
-        .container {
+        button {
+            padding: 8px 12px;
+            border: none;
+            border-radius: 8px;
+            background-color: orangered;
+
+        }
+
+        .First {
+
+            /* background-image: url(./Images/Background.jpeg); */
+            /* padding-top: 10px; */
+            /* padding: 30px, 0, 0, 10px; */
+            line-height: 1.4;
+            color: #000000;
+            padding: 50px 0px;
+            background-color: white;
+
+
+        }
+
+
+
+        .box {
+
+            width: 250px;
+            height: 310px;
+            background-color: rgba(168, 154, 154, 0.618);
+            border-radius: 10px;
+            margin-top: 80px;
+            justify-content: center;
+        }
+
+
+        .info {
             color: rgb(0, 0, 0);
         }
 
 
-        .bg-body-tertiary {
 
-            background-color: rgb(139, 32, 139) !important;
+        .second {
+
+            background-color: #e9edc9;
+            padding: 100px 0px;
+
         }
 
-        .firstpage {
-            width: 100%;
-            height: 500px;
-            background-color: rgb(33, 9, 56);
-            margin-top: auto;
+        .second,
+        p {
+            color: black;
+        }
+
+        .mainbox {
+            width: 250px;
+            height: 280px;
+            background-color: rgba(168, 154, 154, 0.618);
+            background-image: url(./Images/develop.jpeg);
+            background-size: cover;
+            background-position: center;
+            box-shadow: 2px 2px 3px 0px solid rgba(130, 127, 127, 0.579);
             display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            position: relative;
+            margin-top: 80px;
+
+        }
+
+        .one {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(255, 255, 255);
+            background-image: url(./Images/php3.png);
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            position: absolute;
+            box-shadow: 0px 4px 9px 0px black;
+            top: -10px;
+            bottom: 0;
+            left: -70px;
+            right: 0;
         }
 
 
-        .text {
-            color: rgb(255, 255, 255);
-            top: 20px;
+        .two {
+            width: 80px;
+            height: 80px;
+            background-color: rgb(255, 255, 255);
+            background-image: url(./Images/react1.png);
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0px 4px 9px 0px black;
+            border-radius: 10px;
+            position: absolute;
+            top: -45px;
+            bottom: 0;
+            left: 233px;
+            right: 0;
+        }
+
+        .three {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(255, 255, 255);
+            background-image: url(./Images/mysql.png);
+            background-size: cover;
+            background-position: center;
+            box-shadow: 0px 4px 9px 0px black;
+            display: flex;
+            align-items: center;
+            padding-bottom: 20px;
+            justify-content: center;
+            border-radius: 10px;
+            position: absolute;
+            top: 229px;
+            bottom: 0;
+            left: 109px;
+            right: 0;
+        }
+
+        .about {
+            color: rgb(0, 0, 0);
+            padding-top: 40px;
+        }
+
+        .about h1 {
+            color: rgb(85 72 72);
+            padding-top: 50px;
+            /* font-size: 35px; */
+        }
+
+
+
+        .about,
+        button {
+            /* text-align: center; */
+            justify-content: center;
+        }
+
+
+
+
+        h3 {
+            font-size: 30px;
+            font-weight: 600;
+        }
+
+        .portfolio,
+        span {
+            font-size: 35px;
+        }
+
+        h3,
+        .highLight {
+            color: orangered;
+            font-weight: 700;
+        }
+
+
+        .project1 {
+            display: flex;
+            margin-top: 20px;
+            padding-top: 20px;
+            justify-content: space-around;
+            width: 400px;
+            height: 300px;
+            background-color: orangered;
+            border-radius: 8px;
+            /* border-color: aqua; */
+            image-resolution: 1080px;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 2px 4px 3px 0px rgba(53, 51, 51, 0.722);
+        }
+
+        .project2 {
+            display: flex;
+            margin-top: 20px;
+            padding-top: 20px;
+            justify-content: space-around;
+            width: 400px;
+            height: 300px;
+            background-color: orangered;
+            border-radius: 8px;
+            /* border-color: aqua; */
+            image-resolution: 1080px;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 2px 4px 3px 0px rgba(53, 51, 51, 0.722);
+        }
+
+        .project1 {
+            border-color: black;
+            position: relative;
+            background-image: url(./Images/zapiee.png);
+        }
+
+        .project1 p {
+            padding-top: 190px;
+            font-weight: 500;
+        }
+
+        .project2 p {
+            padding-top: 190px;
+            font-weight: 500;
+        }
+
+        .project2 {
+            border-color: black;
+            position: relative;
+            background-image: url(./Images/Mcqueen.png);
+        }
+
+
+
+        .navbar {
+            position: fixed;
+            top: 0px;
+            width: 100%;
+            z-index: 100;
+        }
+
+        .bg-body-tertiary {
+            background-color: bg-body-tertiary !important;
+        }
+
+        .project {
+            padding-top: 50px;
+            padding-bottom: 20px;
+            background-color: white;
+        }
+
+        .third,
+        span {
+            color: orangered;
+            font-size: 30px;
+        }
+
+        h4 {
+            color: rgb(85 72 72);
+            font-size: 30px;
+        }
+
+
+        .second {
+            padding-top: 20px;
+            background-color: white;
+        }
+
+        .third {
+            /* background-color: #f8f9fa; */
+            padding-top: 150px;
+            padding-bottom: 40px;
+        }
+
+        .fourth {
+            background-color: #f8f9fa;
+
+        }
+
+        .fifth {
+            background-color: #ffffff;
+
+        }
+
+
+        .nav-tabs {
+            padding-top: 30px;
+        }
+
+        .fourth,
+        h5 {
+            color: orangered;
+            font-size: 40px;
+            padding-top: 60px;
+        }
+
+
+
+        .tab-content,
+        p {
+            color: rgb(0, 0, 0);
+            font-size: 20px;
+        }
+
+        .nav-tabs .nav-link {
+            color: orangered;
+            font-size: 20px;
+        }
+
+        .nav-tabs .nav-item.show .nav-link,
+        .nav-tabs .nav-link.active {
+            background-color: #b6bfc8c7;
+            text-align: center;
+            justify-content: center;
+        }
+
+        .tab-content,
+        h1 {
+            font-size: 30px;
+        }
+
+
+
+        h6 {
+            color: orangered;
+            font-size: 30px;
+            padding-top: 50px;
+            padding-bottom: 30px;
+            text-align: center;
+        }
+
+        .user {
+            color: black;
+        }
+
+
+        form input {
+            padding: 15px 20px;
+            border: none;
+            width: 100%;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            /* background-color: #eeefefc7; */
+            border: 1px solid #000000;
+        }
+
+        form button {
+            background-color: orangered;
+            color: white;
+            font-weight: 600;
+            width: 100%;
+            padding: 15px 20px;
+
+        }
+
+        form textarea {
+            width: 100%;
+            height: 200px;
+            border-radius: 10px;
+            /* background-color: #eeefefc7; */
+            /* border-color: yellow; */
+            border-color: rgb(0, 0, 0);
+
+        }
+
+        .space .img-fluid {
+
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: black;
+            box-shadow: 0px 4px 9px 0px;
+            /* height: 50px; */
+
+        }
+
+        .project1.img-fluid {
+            box-shadow: #000000;
+            box-shadow: opx 3px 4px 0px;
+
+            border-radius: 15px;
+            content: "";
+            animation: spin 2s linear infinite;
+            z-index: 1;
+
+        }
+
+        .fifth .img-fluid {
+            padding: 6px;
+            max-width: 50px;
+            height: 50px;
+
+
+        }
+
+
+        body {
+            /* background-color: black; */
+            font-family: system-ui, sans-serif;
+        }
+
+        .tutorial {
+            height: 40vh;
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
             align-items: center;
 
-
-
         }
 
-        .secpage {
-            background-color: rgb(32, 16, 46);
-
-        }
-
-
-
-
-        .introSec {
-            background-color: blue;
-        }
-
-        /* .boximg{
-            width: 200px;
-            height: 200px;
-            background-color: rgb(46, 1, 46);
+        .container1 {
             display: flex;
-            justify-content: space-between;
-        } */
-
-        .container-fluid {
-            background-color: rgb(139, 32, 139);
+            overflow: hidden;
+            -webkit-mask-image: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent);
+            mask-image: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent);
         }
 
-        .navbar-nav .nav-link.active,
-        .nav-link,
-        .nav-link dropdown-toggle .navbar-nav .nav-link.show {
-            color: rgb(255 255 255);
-            margin-left: 100px;
-            justify-content: space-between;
+        .scroller {
+            display: flex;
+            gap: 10px;
+            animation: scroll 25s linear infinite;
+            animation-delay: calc(25s / -1);
+            padding-top: -200px;
         }
 
-        .role {
-            color: blue;
+        .scroller:nth-child(2) {
+            animation: scroll2 25s linear infinite;
+            animation-delay: calc(25s / -2);
         }
 
+        .item {
+            font-size: 25px;
+            text-transform: uppercase;
+            font-weight: 500;
+            letter-spacing: 1.5px;
+            color: #000000;
+            padding: 7px 15px;
+            border-radius: 7px;
+            box-shadow: rgba(255, 255, 255, 0.192) 0px 0px 15px;
+        }
 
-        @media only screen and (min-width:991.99px) {
-            .navbar-collapse {
-                display: flex !important;
-                justify-content: flex-end !important;
+        @keyframes scroll {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
             }
         }
 
-        .navbar-nav .nav-link.active,
-        .nav-link,
-        .nav-link dropdown-toggle .navbar-nav .nav-link.show {
-            color: rgb(255 255 255);
-            margin-left: 100px;
-            justify-content: space-between;
+        @keyframes scroll2 {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-200%);
+            }
         }
 
-        .btn-primary {
-            justify-content: space-around;
-            background-color: none;
-            border-color: blueviolet;
-
+        .space {
+            padding-top: 30px;
         }
-
-        .role2 {
-            color: blue;
-        }
-
-        .thirdpage {
-            background-color: rgb(50, 12, 83);
-            height: 800px;
-            width: 100%;
-        }
-
-        .fourthpage {
-            background-color: rgb(54, 29, 75);
-            height: 800px;
-            width: 100%;
-        }
-
-        .btn {
-            background-color: rgb(25, 15, 34);
-            justify-content: center;
-
-        }
-
-        .Professional {
-            width: 100%;
-            height: 600px;
-            background-color: rgb(111, 58, 160);
-            margin-top: auto;
-            display: flex;
-            justify-content: center;
-            font-size: 50px;
-            padding: 20px;
-
-        }
-
-        .dummySec {
-            background-color: blue;
-        }
-
-
-        /* .btn-primary{
-            background-color: blue;
-
-        } */
     </style>
-
-
 </head>
 
 <body>
 
-    <div class="container">
-
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">JP</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse mb-2" id="navbarSupportedContent">
-                    <ul class="navbar-nav mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="">About Us</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-
-                    </ul>
 
 
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Jeba prabhakaran</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#works">works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Education">Education</a>
+                    </li>
 
-                    <!-- <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Search</button>
-                        </form> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Contacts">Contacts</a>
+                    </li>
+
+
+                </ul>
+                <form class="d-flex" role="search">
+                    <button>
+
+                        <a href="./Images/Resume.pdf"> Download cv </a></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <section class="First">
+        <div class="container">
+            <div class="row">
+
+
+
+                <div class="col-lg-6 d-flex justify-content-center order-lg-2">
+
+                    <div class="box">
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6 p-5 order-lg-1">
+
+
+                    <h2 class="intro">
+                        I'm
+                        <strong>Jeba Prabhakaran</strong> <br>
+                        <span class="highLight"> UI/UX Designer & Fullstack Developer</span>
+                    </h2>
+                    <br>
+
+                    <p class="info">
+                        Creative UI/UX Designer with a passion for crafting intuitive and engaging user
+                        experiences. <br>
+                        Skilled Front-End Developer dedicated to transforming designs into seamless and responsive
+                        websites.
+                        Committed to enhancing user satisfaction through innovative design and development
+                    </p>
+
+                    <button>
+                        <a href=""> About us </a>
+                    </button>
+
                 </div>
             </div>
-        </nav>
+        </div>
 
 
-        <section class="introSec">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
+    </section>
+
+    <section class="second">
+        <div class="container " id="about">
+            <div class="row">
+                <div class="col-lg-6 d-flex justify-content-center">
+                    <div class="mainbox">
+                        <!-- <img src="./Images/html1.png" alt="" > -->
+                        <div class="one img-fluid">
+
+                        </div>
+                        <div class="two img-fluid">
+
+                        </div>
+                        <div class="three img-fluid">
+
+                        </div>
 
 
+                    </div>
 
-                        <div class="text">
-                            <p> <br><br>
-                                Hello its me <br>
-                                JEBA PRABHAKARAN M <br>
-                                And i'm a <span class="role">
-                                    ui/ux Designer and developer
-                                </span>
-                                <br> <br>Creative UI/UX Designer with a passion for crafting intuitive and engaging user
-                                experiences.
-                                Skilled Front-End Developer dedicated to transforming designs into seamless and
-                                responsive
-                                websites.
-                                Committed to enhancing user satisfaction through innovative design and development
-                            </p>
-                            <div class="button">
-                                <button type="button" class="btn btn-primary btn-sm">Download CV </button>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="about">
+                        <h1>
+                            I'm a Developer
+
+                            I Develop Application that Help People
+                        </h1>
+                        <br>
+                        <p class="user">
+                            Dliquip ex ea commo do conse namber onequa ute irure dolor in reprehenderit in voluptate
+                            velit esse cillum dolore eu fugiat nulla pariatu epteur sint occaecat cupidatat
+
+                            Krnon proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut
+                            perspiciatis unde omnis
+
+                            View Portfolio
+                        </p>
+
+                        <button> <a href="">View portfolio </a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="works">
+        <div class="container" id="works">
+
+            <!-- <div class="project"> -->
+
+
+            <h1 class=" pt-5 text-center">
+                portfolio
+            </h1>
+            <h3 class=" text-center pb-3">My Amazing Works</h3>
+
+            <div class="row  g-3">
+
+                <div class="col-lg-6  d-flex justify-content-center">
+                    <a href="./bootstrap.html">
+
+
+                        <div class="card">
+                            <img src="./Images/zapiee.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="text-center "> zapiee Cosmetice produts</p>
 
                             </div>
                         </div>
 
-                    </div>
-                    <div class="col-lg-6">
-                        <h1> profile</h1>
-                    </div>
+                    </a>
                 </div>
+                <div class="col-lg-6  d-flex justify-content-center">
+                    <a href="https://JebaPrabarakaran.github.io/MC-queen">
+
+
+                        <div class="card">
+                            <img src="./Images/Mcqueen.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="text-center">MC Queen</p>
+
+                            </div>
+                        </div>
+
+                    </a>
+                </div>
+
+
+
+                <!-- </div> -->
             </div>
-        </section>
-        <div class="container">
-            <div class="secpage">
-
-                .....ABOUT ME..... <br>
-                GET TO <span class="role2">KNOW ME !</span>
 
 
-                <img src="./Images/blob (2).svg" alt="" class="img-fluid" style="height: 500px;">
 
-            </div>
         </div>
+        </div>
+    </section>
 
-<section class="firstdummy">
-
-
-        <div class="container">
+    <section class="third">
+        <div class="container" id="Skills">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-12 text-center">
+                    <h4> <b> My Skills</b></h4>
+                    <span> <strong>I Develop Skills Regularly</strong></span>
 
-            <p>....Learning And Career Path....</p>
-
-            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
-                        aria-selected="true">Education</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
-                        aria-selected="false">certificate</button>
-                </li>
-
-            </ul>
-            <div class="tab-content" id="pills-tabContent">
-                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
-                    tabindex="0">
-                    <div>
-                        <h6>
-                            BSC VISUAL COMMUNICATION
-                        </h6>
-                        <h6>
-                            Little Flower Higher Secondary school
-                        </h6>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
-                    tabindex="0">
-                    <h6>Full stack Developer</h6>
-                    <h6>UI/UX Designer</h6>
-                    <h6>Graphic Designer</h6>
                 </div>
             </div>
-        </div>
-    </div>
+
 
         </div>
     </section>
 
-        <div class="container">
-
-            <div class="Professional">
-                <p>Professional Skills</p>
-
-                <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25"
-                    aria-valuemin="0" aria-valuemax="100">
-                    <div class="progress-bar" style="width: 25%">25%</div>
-                </div>
+    <section class="tutorial">
+        <div class="container1">
+            <div class="scroller">
+                <img src="./Images/html1.png" alt="" class="item">
+                <img src="./Images/css1.png" alt="" class="item">
+                <img src="./Images/java1.png" alt="" class="item">
+                <img src="./Images/react1.png" alt="" class="item">
+                <img src="./Images/bootstrap1.png" alt="" class="item">
+                <img src="./Images/php3.png" alt="" class="item">
+                <img src="./Images/mysql.png" alt="" class="item">
+                <img src="./Images/git.png" alt="" class="item">
+                <img src="./Images/photoshop.png" alt="" class="item">
+                <img src="./Images/xd.png" alt="" class="item">
+                <img src="./Images/illustrator.png" alt="" class="item">
+                <img src="./Images/figma1.png" alt="" class="item">
+            </div>
+            <div class="scroller">
+                <img src="./Images/html1.png" alt="" class="item">
+                <img src="./Images/css1.png" alt="" class="item">
+                <img src="./Images/java1.png" alt="" class="item">
+                <img src="./Images/react1.png" alt="" class="item">
+                <img src="./Images/bootstrap1.png" alt="" class="item">
+                <img src="./Images/php3.png" alt="" class="item">
+                <img src="./Images/mysql.png" alt="" class="item">
+                <img src="./Images/git.png" alt="" class="item">
+                <img src="./Images/photoshop.png" alt="" class="item">
+                <img src="./Images/xd.png" alt="" class="item">
+                <img src="./Images/illustrator.png" alt="" class="item">
+                <img src="./Images/figma1.png" alt="" class="item">
             </div>
         </div>
-
-    </div>
-
-
-    </div>
-
-
-
-    <section class="dummySec">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias tenetur voluptatum quisquam
-                        cumque assumenda natus, quasi deleniti, rerum sapiente in debitis quia alias fuga iusto
-                        repellendus molestiae eos odio distinctio consectetur. Et ad voluptatem ducimus ea, aliquam,
-                        nostrum quo at, repudiandae nesciunt dolor molestiae adipisci voluptas ipsum. Voluptate cum
-                        exercitationem laudantium provident. Repudiandae magnam saepe ut fuga reiciendis illum
-                        blanditiis nam eligendi, cupiditate sunt necessitatibus, voluptatem magni autem corporis et
-                        neque quibusdam, incidunt quos dolores porro unde facilis non aspernatur! Veritatis voluptatibus
-                        odit blanditiis nobis cupiditate molestiae, neque et quasi eligendi modi consectetur, corporis
-                        laudantium dolores iste fuga saepe magni.
-
-                    </p>
-                </div>
-                <div class="col-lg-6">
-                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio exercitationem deleniti excepturi
-                        esse pariatur, atque corrupti dignissimos nam quam tenetur!</h1>
-                </div>
-            </div>
-        </div>
-
     </section>
+
+
+
+
+
+    <section class="fourth">
+        <div class="container text-center" id="Education">
+            <div class="row">
+                <div class="col ">
+                    <h5> <b> Education</b></h5>
+
+                    <ul class="nav nav-tabs" id="myTab" role="tablist ">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                                data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
+                                aria-selected="true">Education</button>
+                        </li>
+
+
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                                data-bs-target="#profile-tab-pane" type="button" role="tab"
+                                aria-controls="profile-tab-pane" aria-selected="false">Certification</button>
+                        </li>
+
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel"
+                            aria-labelledby="home-tab" tabindex="0">
+                            <br>
+
+                            <H1>SSLC</H1>
+
+                            <p> Little flower matric her sec school </p>
+                            <h1>
+                                BSC (VISUAL COMMUNICATION)
+                            </h1>
+                            <P>
+                                ST.xaviers,college- TIRUNELVELI
+                            </P>
+                            <br>
+
+
+                        </div>
+                        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
+                            tabindex="0">
+                            <br>
+
+
+                            <H1>Full Stack Developer</H1>
+
+                            <p>Image Creative Education ,Coimbatore</p>
+                            <h1>
+                                UI/UX DESIGNER
+                            </h1>
+                            <P>
+                                Image Creative Education ,Coimbatore
+                            </P>
+                            <h1>
+                                GRAPHIC DESIGNER
+                            </h1>
+                            <P>
+                                Image Creative Education ,Coimbatore
+                            </P>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section class="fifth">
+        <div class="container text-center p-5 " id="Contacts">
+            <div class="row ">
+                <h6> <b> Contact us</b></h6>
+
+                <div class="col-lg-6">
+
+                    <!-- <h6> <b> Contact us</b></h6> -->
+
+
+
+                    <form action="">
+
+                        <input type="text" placeholder="Name">
+                        <input type="text" placeholder="Email">
+                        <input type="text" placeholder="phone">
+                        <textarea name="" id="" placeholder="Message">
+
+                        </textarea>
+
+                        <button>Submit</button>
+                    </form>
+
+
+
+
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="space">
+                        <div class="row mb-4">
+
+
+                            <div class="col-3 d-flex  justify-content-end">
+                                <img src="./Images/location.png" alt="" class="img-fluid">
+
+                            </div>
+                            <div class="col-9 d-flex  justify-content-start align-items-center text-start">
+                                <p class="mb-0"> 36/railnagar, pettai, <br>Tirunelveli -627604</p>
+                            </div>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col-3 d-flex  justify-content-end ">
+                                <img src="./Images/email.png" alt="" class="img-fluid">
+
+                            </div>
+                            <div class="col-9 d-flex  justify-content-start align-items-center ">
+                                <p class="mb-0"> Jeba102001@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col-3 d-flex  justify-content-end">
+                                <img src="./Images/phone.png" alt="" class="img-fluid">
+
+                            </div>
+                            <div class="col-9 d-flex  justify-content-start align-items-center ">
+                                <p class="mb-0"> 91+ 9597895093</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+   
+
+
 
 </body>
 
